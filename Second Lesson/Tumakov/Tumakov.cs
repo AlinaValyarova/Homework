@@ -1,14 +1,12 @@
 ﻿using System;
 
-namespace Homework
+namespace Tumakov
 {
-    internal class Program
+    class Tumakov
     {
-
-
         static void Main(string[] args)
         {
-            ex3();
+            ex1();
         }
         enum Account : int
         {
@@ -21,9 +19,9 @@ namespace Homework
                 "переменную типа перечисления, присвоить ей значение и вывести это значение на печать");
 
             Console.WriteLine("Значение текущего счета: ");
-            Console.WriteLine((int)Program.Account.Current);
+            Console.WriteLine((int)Tumakov.Account.Current);
             Console.WriteLine("Значение сберегательного счета: ");
-            Console.WriteLine((int)Program.Account.Saving);
+            Console.WriteLine((int)Tumakov.Account.Saving);
         }
         public static void ex2()
         {
@@ -56,7 +54,7 @@ namespace Homework
             newEmployee.firstName = Console.ReadLine();
 
 
-            
+
 
         }
 
@@ -72,9 +70,5 @@ namespace Homework
             public string firstName;
             public int Uni;
         }
-        }
-
-
     }
-
-
+}
