@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 
 namespace Homework
 {
@@ -10,12 +9,12 @@ namespace Homework
 
             Console.WriteLine("Task 1 (Вывести на экран число e (основание натурального логарифма) с точностью до десятых.)");
             Console.WriteLine("Число е с точностью до десятых: 2.7");
+            double e = Math.E;
 
 
             Console.WriteLine("Task 2 (Вывести на экран числа 50 и 10 одно под другим.)");
             Console.WriteLine("50");
             Console.WriteLine("10");
-
 
             Console.WriteLine("Task 3 (Составить программу вывода на экран «столбиком» четырех любых чисел.)");
             Console.WriteLine("10");
@@ -40,14 +39,14 @@ namespace Homework
             Console.WriteLine("Task 6 (Дан радиус окружности. Найти длину окружности и площадь круга.)");
             Console.WriteLine("Enter the circle radius");
             float radius = Convert.ToSingle(Console.ReadLine());
-            Console.WriteLine("The length of the circle is " + 2 * 3.14 * radius);
+            Console.WriteLine("The length of the circle is " + 2 * Math.PI * radius);
             Console.WriteLine("The area of the circal is " + 3.14 * radius * radius);
 
 
             Console.WriteLine("Task 7 (Найти значение y=cos(x))");
             Console.WriteLine("Enter the angle");
             float angle = Convert.ToSingle(Console.ReadLine());
-            float anglerad = (angle * (MathF.PI)) / 180;
+            float anglerad = (angle * (Math.PI)) / 180;
             Console.WriteLine("The value of cos is " + MathF.Cos(anglerad));
 
 
@@ -85,7 +84,7 @@ namespace Homework
                 "(кавычки не нужны). Причём сделайте, чтобы выводилось сначала так:  Мир Труд Май. Затем так:)");
             Console.WriteLine("Мир Труд Май");
             Console.WriteLine("Мир");
-            Console.WriteLine("    Труд");
+            Console.WriteLine("\tТруд");
             Console.WriteLine("         Май");
 
 
